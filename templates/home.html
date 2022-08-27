@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Database</title>
+</head>
+<body>
+    <h1> Contact details of SA and OA Tech in Kerala Circle   </h1>
+   <ul> 
+    <h4>Name  &emsp; &emsp; &emsp; &emsp;  &emsp; &emsp;Division   &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; PhoneNumber</h4>
+        {% for member in member_list %}
+    <h1></h1>    
+    <li> {{member.name}} &emsp; &emsp; &emsp; &emsp; {{member.division}}   &emsp; &emsp;&emsp; &emsp;{{member.phonenumber}}  </li>
+         {% endfor %}
+
+
+   </ul> 
+  
+
+    
+</body>
+</html>
